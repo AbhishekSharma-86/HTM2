@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url("img/hackathon-bg.jpg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.Hackathons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px,100%);
+
+}
+.hackathon-card{
+    flex: 1;
+    max-width: 350px;
+    min-width: 250px;
+    width:;
+    background-color: white;
+    margin:20px 10px;
+    padding: 0px 30px 30px 30px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s linear;
+    border-radius: 10px;
+}
+.hackathon-card-header{
+    background-color: skyblue;
+    display: inline-block;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 20px;
+    font-weight: 500px;
+    transition: 0.4s linear;
+}
+.start,.end{
+    color: #4a4545;
+}
+.hackathon-card:hover .hackathon-card-header {
+    box-shadow: 0 0 0 30em rgb(26, 143, 182) ;
+    
+}
+.status{
+    font-size: 120%;
+    color: rgb(19, 241, 104);
+    font-family:sans-serif;
+}
+.button{
+    text-decoration: none;
+    color:black;
+    padding:10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    outline:none;
+    overflow: hidden;
+    border: 2px solid black;
+    font-family: cursive;
+    font-size: 15px;
+}
+.button:hover{
+    text-decoration: none;
+    border-color: black;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    background-image: linear-gradient(to right ,rgb(38, 0, 255),rgb(255, 49, 49));
+}
